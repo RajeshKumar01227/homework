@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 10</title>
+    
+    <style>
+         table{
+        border: 1px solid black;
+        width: 70%;
+        background-color: rgb(1, 1, 5);
+    }
+    th,td{
+    border: 1px solid black;
+    height: 1cm;
+    }
+    th{
+        background-color: white;
+    }
+    td{
+        background-color: white;
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <section>
+            <h1>Module 10: Forms</h1>
+            <div>
+                <ul>
+                 <li><h2>Topics:</h2></li>
+                        <ul>
+                         <li type="circle"><h3>Form structure with form</h3></li>
+                         <li type="circle"><h3>Input elements: input, textarea, select, button</h3></li>                 
+                         <li type="circle"><h3>Attributes: type, name, value, placeholder, required</h3></li>
+
+                         </ul>
+                </ul>
+
+                <ul>
+                    <li><h2>Activities:</h2></li>
+                         <ul>
+   
+                            <li type="circle"><h3>Attributes: type, name, value, placeholder, required</h3></li>
+                            <li type="circle"><h3>Discuss form validation and its importance.</h3></li>
+                        </ul>
+                </ul>
+
+                <ul>
+                    <li><h2>Objectives:</h2></li>
+                        <ul>
+   
+                            <li type="circle"><h3>Build interactive forms in HTML.</h3></li>
+                       
+                            <li type="circle"><h3>Implement basic validation concepts for forms.</h3></li>
+                        </ul>
+                </ul>
+            </div>
+        </section>
+    </header>
+
+    <section>
+        <h1>Module:10 Tasks</h1>
+        <div>
+            <h2><u>ADMISSION FORM FORMAT-</u></h2>
+            <form>
+                <h3><u>For office Use Only</u></h3>
+                <label for="Form Numbar"><b>Form Numbar:</b></label>
+                <input type="text"autofocus >
+                <label for="Date"><b>Date:</b></label>
+                <input type="date">
+                <label for="Admission No">Admission No.:</label>
+                <input type="number">
+                <br>
+                <label for="Transfer Certificate No"><b>Transfer Certificate No.:</b></label>
+                <input type="text" >
+                <label for="Date"><b>Date:</b></label>
+                <input type="date">
+                <label for="Scholar No">Scholar No.:</label>
+                <input type="number">
+                <br>
+                <label for="Admission Fees Receipt No"><b>Admission Fees Receipt No.:</b></label>
+                <input type="text" >
+                <label for="Date"><b>Date:</b></label>
+                <input type="date">
+                <label for="Login ID">Login ID:</label>
+                <input type="text">
+                <br>
+                <label for="Hostel Form No. (if any)">Hostel Form No. (if any)</label>
+                <input type="text">
+                <label for="date">Date:</label>
+                <input type="date">
+                <label for="CBSE Registration No">CBSE Registration No.:</label>
+                <input type="number">
+                <hr>
+                
+                <Div>
+                    <h1>Maharaja Public School</h1>
+                    <h3>NH-30,Rewa-Satna Road, Bela, Satna M.P.-485 115</h3>
+                    <h2>CBSE Affilliation No. 1030591, School Code: 50566, Dise code: 23130111812</h2>
+                    <h2>Email: founder@mpsrewa.com. website: maharajapublicschoolbela.com</h2>
+                    <h1>Application for Admission</h1>
+                    <h2>Session 2021-22</h2>
+                </Div>
+
+                <div>
+                    <label for="imges"><b>Student's</b>Recent Passport Size Photograph for ID Card & School Record <b>Paste it not to staple</b></label>
+                    <input type="file"><br>
+
+                    <label for="imges"><b>Father's</b>Recent Passport Size Photograph for ID Card & School Record <b>Paste it not to staple</b></label>
+                    <input type="file"><br>
+
+                    <label for="imges"><b>Mother's</b>Recent Passport Size Photograph for ID Card & School Record <b>Paste it not to staple</b></label>
+                    <input type="file"><br>
+
+                    <label for="imges"><b>Local Guardian's</b>Recent Passport Size Photograph for ID Card & School Record <b>Paste it not to staple</b></label>
+                    <input type="file"><br>
+                </div>
+                <div>
+                    <label for="class">Class:</label>
+                    <input type="text">
+
+                    <label for="Admission type">Admission type:</label>
+                    <input type="text">
+
+                    <h3>Student's Detail</h3>
+
+                    <label for="name">Name:</label>
+                    <input type="text"><br>
+                    <label for="Nationality">Nationality:</label>
+                    <input type="text">
+                    <label for="Mother Tongue">Mother Tongue:</label>
+                    <input type="text"><br>
+                    <label for="Date of birth">Date of Birth(dd/mm/yyyy)</label>
+                    <input type="date">
+                    <label for="Place of birth">Place of Birth:</label>
+                    <input type="text"><br>
+                    <label for="in word DOB">Date Of Birth (In Word)</label>
+                    <textarea ></textarea><br>
+
+                    <label for="gender">Gender:</label>
+                    <select name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="Any Other">Any Other</option>
+                    </select>
+
+                    <label for="Single Girl Child">Single Girl Child:</label>
+                    <input type="radio" id="Single Girl Child" name="Single Girl Child" value="Yes"/> Yes     
+                    <input type="radio" id="Single Girl Child" name="Single Girl Child" value="No"/> No <br/>   
+                   
+                    <label for="Specially abled:">Specially abled:</label>
+                    <input type="checkbox" id="Specially abled:">Yes
+                    <input type="checkbox" id="Specially abled:">No
+                    <input type="text" name="" id="Specially abled:"><br>
+                    <label for="Religion">Religion:</label>
+                    <input type="text">
+                    <label for="caste">Caste:</label>
+                    <input type="text">
+                    <label for="Sub Caste">Sub Caste:</label>
+                    <input type="text" autofocus><br>
+                    <label for="Category">Category:</label>
+                    <select name="Category">
+                        <option value="ST">ST</option>
+                        <OPtion value="SC">SC</OPtion>
+                        <OPTion value="OBC">OBC</OPTion>
+                        <option value="EWS">EWS</option>
+                        <option value="General">General</option>
+                    </select><br>
+                    <label for="Blood group"></label>
+                    <input type="text">
+                    <label for="Allergic to:">Allergic to:</label>
+                    <input type="text">
+                    <label for="Aadhar No">Aadhar No.:</label>
+                    <input type="text"><br>
+                    <label for="Samagra ID">Samarga ID <small>(Family Id & Child ID)</small></label>
+                    <input type="text">
+                    <label for="mobile No.">Mobile No. <small>(for massaging)</small></label>
+                    <label for="Last School Attended">Last School atttrened:</label>
+                    <input type="text"><br>
+                    <label for="Name of Board:">Name of Board</label>
+                    <input type="text">
+                    <label for="Boar Name">CBSE/ICSE/IB/State Board</label>
+                    <input type="text" >
+                    <label for="Any other">/Any other <small>(Pls,specify)</small></label>
+                    <input type="text">
+                    <br>
+
+                    <table>
+                        <tr>
+                            <th>subject</th>
+                            <th>maximum marks</th>
+                           <th>Marks Obtained</th>
+                           <th>Percentage marks</th>
+                           <th>Remarks</th>
+                        </tr>
+
+                        <tr>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                        </tr>
+
+                        <tr>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                        </tr>
+
+                        <tr>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                        </tr>
+
+                        <tr>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                        </tr>
+
+                        <tr>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                        </tr>
+                        
+                        <tr>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                        </tr>
+
+                    </table>
+
+
+
+
+
+
+                </div>
+
+
+            </form>
+        </div>
+    </section>
+</body>
+</html>
