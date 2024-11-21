@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 02: CSS Selectors And Specificity</title>
+    <style>
+        *{
+            background: linear-gradient(135deg, #2a4708,rgb(80, 6, 52));
+
+        }
+        .class{
+            color: bisque;
+        }
+        #id{
+            text-align: center;
+        }
+        p{
+            color: cornsilk;
+        }
+        h1,h2,p{
+            border: 2px solid red;
+        }
+
+
+        div h2{
+            color: rgb(239, 123, 179);
+            
+
+        }
+        
+        header::first-letter{
+            font-size: 1cm;
+            color: tomato;
+        }
+        header{
+            font-size: 0.5cm;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="id">
+        <header> using all selectors  in this page.</header>
+        <h1 class="class">using universal selectors adding background color whole page.</h1>
+        <h2> using Class selectors adding text color in upper h1 tag</h2>
+        <h2>using id selectors adding text - align center all text of div container.</h2>
+        <p><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam error repellendus aliquam aut odit. Quia rem illo exercitationem recusandae iste laudantium repellat nemo voluptatem quaerat quo. Quas animi soluta eligendi!</b></p>
+        <h2>using Type selectors adding text color in upper p tag.</h2>
+        <h2>using  Group selectors adding red color border on all text.</h2>
+        <h2>using Desendant selectors adding pink color  in all  h2 tag. </h2>
+
+    </div>
+</body>
+</html>
+
+<!--
+Selectors:
+1. Universel 
+2. Class
+3.Id
+4.Type
+5.Group
+6.Desendant 
+
+1.Explore about Pseudo Class..(hover,nth Child,Important)?
+2.Writw blong on all Kind of Selectors?
+3.Practice all the Selectors...
+-->

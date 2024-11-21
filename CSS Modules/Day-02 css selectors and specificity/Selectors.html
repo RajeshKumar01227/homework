@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog on selectors css</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+        header{
+            text-align: center;
+            background-color: crimson;
+
+        }
+        nav{
+            background-color: rgb(72, 37, 45);
+            justify-content: space-evenly;
+            display: flex;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(238, 235, 232);
+            
+        }
+        section{
+            background-color: rgb(209, 91, 93);
+            align-items: center;
+            justify-items: center;
+        
+        }
+        div{
+             
+             margin: auto;
+             overflow: hidden;
+             background-color: crimson;
+             border-radius: 10px;
+             color: rgb(234, 208, 5);
+             width: 80%;
+             margin: 20px;
+             padding: 20px;
+             justify-content: center;
+             align-items: center;
+            
+
+        }
+        h1{
+            color: yellowgreen;
+        }
+        
+    </style>
+</head>
+
+<body>
+<header>
+    <br><h3><h1>CSS Selectors </h1><p>CSS selectors are used to "find" (or select) the HTML elements you want to style.</p>
+    <nav>
+        <a href="#universal">Universal</a>
+        <a href="#Element">Element</a>
+        <a href="#Class">Class</a>
+        <a href="#ID">ID</a>
+        <a href="#Descendant">Descendant</a>
+        <a href="#Child">Child</a>
+        <a href="#Adjacent Sibling">Adjacent Sibling</a>
+        <a href="#General Sibling">General Sibling</a>
+        <a href="#Attribute">Attribute</a>
+        <a href="#Pseudo-classes">Pseudo-classes</a>
+        <a href="# Pseudo"> Pseudo</a>
+        <a href="#Group">Group</a>
+        <a href="#Combinator">Combinator</a>
+        <a href="#Negation Pseudo-class">Negation Pseudo-class</a>
+    </nav>
+</header>
+
+
+<section>
+    <h1>Introduction</h1>
+    <br>
+    <h4>In CSS (Cascading Style Sheets), selectors are used to target specific HTML elements to apply styles to them. A selector defines which elements the styles will be applied to based on various criteria such as element types, classes, IDs, attributes, or relationships between elements.</h4>
+    
+    <div  id="universal">
+        <h1>1. Universal Selector (*)</h1>
+        <h3>Purpose: Targets all elements in the document.</h3>
+        <pre>Syntax: <br><code>* {
+            property: value;
+          }
+          </code></pre>
+        <pre>Example: <br><code>* {
+            margin: 0;
+            padding: 0;
+          }
+          </code></pre>
+    </div>
+
+    <div id="Element">
+        <h1>2. Type Selector (Element Selector)</h1>
+        <h3>Purpose: Targets elements of a specific type (e.g., p , div).
+
+        </h3 id >
+        <pre>Syntax: <br><code>
+            element {
+                property: value;
+              }
+              
+          </code></pre>
+        <pre>Example: <br><code>
+            p {
+                font-size: 16px;
+              }
+              
+          </code></pre>
+    </div>
+
+    <div id="Class">
+        <h1>3. Class Selector (.)</h1>
+        <h3>Purpose: Targets elements with a specific class.</h3>
+        <pre>Syntax: <br><code>
+            .class-name {
+            property: value;
+          }
+          
+          </code></pre>
+        <pre>Example: <br><code>
+            .button {
+            background-color: blue;
+          }
+          
+          </code></pre>
+    </div>
+    
+    <div id="ID">
+        <h1>4. ID Selector (#)
+        </h1>
+        <h3>Purpose: Targets an element with a specific ID (unique within the page).
+
+        </h3>
+        <pre>Syntax: <br><code>
+            #id-name {
+                property: value;
+              }
+              
+          </code></pre>
+        <pre>Example: <br><code>
+            #header {
+                font-weight: bold;
+              }
+              
+          </code></pre>
+    </div>
+    
+    <div id="Descendant">
+        <h1>5. Descendant Selector (Space)
+        </h1>
+        <h3>Purpose: Targets elements that are descendants of another element.
+
+        </h3>
+        <pre>Syntax: <br><code>
+            ancestor descendant {
+                property: value;
+              }
+              
+          </code></pre>
+        <pre>Example: <br><code>
+            div p {
+                color: red;
+              }
+              
+          </code></pre>
+    </div>
+    
+    <div id="Child">
+        <h1>6. Child Selector (>)
+        </h1>
+        <h3>Purpose: Targets direct children of an element.
+
+        </h3>
+        <pre>Syntax: <br><code>
+            parent > child {
+                property: value;
+              }
+              
+          </code></pre>
+        <pre>Example: <br><code>
+            ul > li {
+                list-style-type: none;
+              }
+              
+          </code></pre>
+    </div>
+    
+    <div id="Adjacent Sibling">
+        <h1>7. Adjacent Sibling Selector (+)
+        </h1>
+        <h3>Purpose: Targets an element that is immediately preceded by a specific sibling element.
+
+        </h3>
+        <pre>Syntax: <br><code>
+            element1 + element2 {
+                property: value;
+              }
+              
+          </code></pre>
+        <pre>Example: <br><code>
+            h1 + p {
+                margin-top: 0;
+              }
+              
+          </code></pre>
+    </div>
+    
+    <div id="General Sibling">
+        <h1>8. General Sibling Selector (~)
+        </h1>
+        <h3>Purpose: Targets any sibling element that follows the first element (not necessarily immediately).
+
+        </h3>
+        <pre>Syntax: <br><code>
+            element1 ~ element2 {
+                property: value;
+              }
+              
+          </code></pre>
+        <pre>Example: <br><code>
+            h1 ~ p {
+                color: green;
+              }
+              
+          </code></pre>
+    </div>
+    
+    <div id="Attribute">
+        <h1>9. Attribute Selector
+        </h1>
+        <h3>Purpose: Targets elements with a specific attribute or attribute value.
+
+        </h3>
+        <pre>Syntax: <br><code>
+            element[attribute="value"] {
+                property: value;
+              }
+              
+          </code></pre>
+        <pre>Example: <br><code>
+            a[href^="https"] {
+                color: green;
+              }
+
+              input[type="text"] {
+                border: 1px solid gray;
+              }
+              
+              
+          </code></pre>
+    </div>
+    
+    <div id="Pseudo-classes">
+        <h1>10. Pseudo-classes (:)
+        </h1>
+        <h3>Purpose: Targets elements in a specific state.
+
+        </h3>
+        <pre>Syntax: <br><code>
+            element:pseudo-class {
+                property: value;
+              }
+              
+          </code></pre>
+        <pre>Example: <br><code>
+            a:hover {
+                color: red;
+              }
+              p:first-child {
+                font-weight: bold;
+              }
+              
+          </code></pre>
+    </div>
+    
+    <div id="Pseudo">
+        <h1>11. Pseudo-elements (::)
+        </h1>
+        <h3>Purpose: Targets specific parts of an element, such as the first letter, first line, or inserting content before/after an element.
+
+        </h3>
+        <pre>Syntax: <br><code>
+            element::pseudo-element {
+                property: value;
+              }
+              
+          </code></pre>
+        <pre>Example: <br><code>p::first-letter {
+            font-size: 2em;
+          }
+          
+          </code></pre>
+    </div>
+    
+    <div id="Group">
+        <h1>12. Group Selector (,)
+        </h1>
+        <h3>Purpose: Combines multiple selectors to apply the same styles to different elements.
+
+        </h3>
+        <pre>Syntax: <br><code>
+            selector1, selector2, selector3 {
+                property: value;
+              }
+              
+          </code></pre>
+        <pre>Example: <br><code>
+            h1, h2, h3 {
+                font-family: Arial, sans-serif;
+              }
+              
+          </code></pre>
+    </div>
+    
+    <div id="Combinator">
+        <h1>13. Combinator Selectors</h1>
+        <h3>Purpose: Combines different selectors to apply styles based on relationships between elements.</h3>
+        <pre>Examples:
+            Descendant (space): div p selects all < p> inside < div>.
+            Child (>): ul > li selects direct < li> children of < ul>.
+            Adjacent sibling (+): h1 + p selects the first < p> after an < h1>.
+            General sibling (~): h1 ~ p selects all < p> following an < h1>.
+            </pre>
+    </div>
+    
+    <div id="Negation Pseudo-class">
+        <h1>14. Negation Pseudo-class (:not())</h1>
+        <h3>Purpose: Targets elements that do not match a certain selector.</h3>
+        <pre>Syntax: <br><code>
+            element:not(selector) {
+            property: value;
+          }
+          
+          </code></pre>
+        <pre>Example: <br><code>
+            div:not(.active) {
+            background-color: lightgray;
+          }
+          </code></pre>
+    </div>
+</section>
+</body>
+
+</html>
