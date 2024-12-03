@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        header{
+            text-align: center;
+            background-color: #FAB12F;
+            color: #2A3663;
+            border: 4px solid gray;
+            border-radius: 5px;
+        }
+        p{
+           margin-right: 25%; 
+           font-size: 1.5rem;
+           background-color: #FAB12F;
+            color: #2A3663;
+            border: 4px solid gray;
+            border-radius: 20px;
+            border-top-right-radius: 50%;
+            border-bottom-right-radius: 50%;
+            padding: 50px;
+            margin-left: 40px;
+        }
+        section{
+           display:flex;
+           background-color: #eeb759;
+           border: 4px solid gray;
+           margin-top: 20px;
+
+        }
+        img{
+            padding: 20px;
+        }
+        div{
+            border: 4px solid gray;
+            margin-top: 20px;
+            border-radius: 20px;
+            background-color: #eeb759;
+        }
+
+        h2{
+            font-size: 1.5rem;
+           background-color: #FAB12F;
+            color: #2A3663;
+            border: 4px solid gray;
+            border-radius: 50%;
+            text-align: center;
+            margin-left: 30%;
+            margin-right: 30%;
+            padding: 40px;
+            font-size: 2rem;
+        }
+
+        .first{
+            margin-right: 25%; 
+           font-size: 1.5rem;
+           background-color: #FAB12F;
+            color: #2A3663;
+            border: 4px solid gray;
+            border-radius: 20px;
+            border-top-left-radius: 50%;
+            border-bottom-left-radius: 50%;
+            padding: 50px;
+            margin-right: 40px;
+            margin-left: 40%;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+          <h1>CSS Box Model</h1>
+    </header>
+
+    <section>
+    <p>
+
+In CSS, the box model is a fundamental concept that describes the rectangular boxes generated for elements in the document tree. Every HTML element is essentially a box, and the CSS box model defines the design and layout of these boxes using the following components:</p>
+
+    <img src="data:image/png;base64,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" alt="">
+
+    
+
+    </section>
+
+    <div>
+        <h2>3. Content:
+
+        </h2>
+        <p class="first">The actual content of the element, such as text, images, or other media. The size of the content is determined by the element's width and height properties.</p>
+    </div>
+
+    <div>
+        <h2>2.Padding:</h2>
+        <p>The space between the content and the element's border. It is used to create space inside the box, pushing the content away from the edges. Padding can be set on all four sides (top, right, bottom, and left), and the values can be adjusted using the padding property.
+        </p>
+    </div>
+
+    <div>
+        <h2>3. Border:</h2>
+        <p class="first">A line surrounding the padding (if any) and content. Borders can have different widths, styles (solid, dotted, dashed), and colors. You can control the width, style, and color of borders using the border property.</p>
+    </div>
+
+    <div>
+        <h2>4. Margin:</h2>
+        <p>The space outside the border. It is used to create distance between the element's border and the neighboring elements. Margins also can be set for each side individually (top, right, bottom, and left), and they can be controlled with the margin property.        </p>
+    </div>
+
+</body>
+</html>
