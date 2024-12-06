@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #8EB486;
+        }
+        header{
+            background-color: #4B5945;
+            text-align: center;
+            color:#FCC737;
+            border: 2px solid #FCC737;
+
+        }
+        nav{
+            
+           background-color: #FCC737;
+            padding: 10px;
+            justify-content: space-evenly;
+            display: flex;
+        
+            text-decoration: none;
+
+        }
+        p{
+            padding-left: 20px;
+            color: #6b4f03;
+            font-size: 2rem;
+        }
+        a{
+            color: black;
+           justify-content: space-evenly;
+           text-decoration: none;
+           color: #26431a;
+        }
+        section{
+            border: 2px solid #FCC737;
+            margin: 10px;
+            padding: 10px;
+            background-color: #4B5945;
+            color: #FADA7A;
+        }
+        .first{
+            color: #FCC737;
+            background-color: #26431a;
+            display: inline;
+        }
+        pre{
+            border: 2px solid #FCC737;
+            padding: 10px;
+            color: #F26B0F;
+            
+        }
+        footer{
+            background-color: #4B5945;
+            text-align: center;
+           
+            border: 2px solid #FCC737;
+        }
+        #sec{
+            color:#FCC737;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 > Display Properties in CSS</h1>
+    </header>
+
+    <nav>
+        
+            <a href="#1">Display: Block</a>
+            <a href="#2">Disply: Inline</a>
+            <a href="#3">Display: Inline-Block</a>
+            <a href="#4">Display: None</a>
+        
+    </nav>
+
+    <main>
+        <p>In CSS (Cascading Style Sheets), display properties define how an element should be displayed on the web page. Below are the main display property values:</p>
+    </main>
+
+    <section id="1">
+        <h1 class="first">
+            1. Display: Block
+        </h1>
+        <div>
+            <ul>
+                <li>Elements with display: block; take up the full width of their parent container, causing them to stack vertically.
+                </li>
+                <li>They start on a new line, and any content following them appears below them.
+                </li>
+                <li>example: < div>, < p>, < h1>, etc.</li>
+            </ul>
+        </div>
+        <div>
+            <pre>
+                div {
+            display: block;
+          }
+          </pre></div>
+          <div></div>
+          
+    </section>
+
+    <section id="2">
+        <h1 class="first">2. Display: Inline</h1>
+        <div>
+            <ul>
+                <li>Elements with display: inline; do not start on a new line.
+                </li>
+                <li>They only take up as much width as their content.
+                </li>
+                <li>example: < span>, < a>, < strong>, etc.</li>
+            </ul>
+        </div>
+        <div>
+            <pre>
+                span {
+                    display: inline;
+                  }
+                  
+          </pre></div>
+    </section>
+
+    
+    <section id="3">
+        <h1 class="first">3. Display: inline-block
+        </h1>
+        <div>
+            <ul>
+                <li>This is a mix between block and inline.
+                </li>
+                <li>It allows elements to be inline (side by side), but still have block-like properties (you can set width, height, margin, and padding).
+                </li>
+                <li>example: < img>, custom styled divs.</li>
+            </ul>
+        </div>
+        <div>
+            <pre>
+                img {
+                    display: inline-block;
+                  }
+                   
+          </pre></div>
+    </section>
+
+    
+    <section id="4">
+        <h1 class="first">4. Display: none
+        </h1>
+        <div>
+            <ul>
+                <li>Elements with display: none; are removed from the document flow entirely and will not occupy any space.
+                </li>
+                <li>They are not visible on the page, and they don't affect the layout of other elements.
+                </li>
+                <li>This is different from visibility: hidden, which hides the element but still takes up space.
+                </li>
+            </ul>
+        </div>
+        <div>
+            <pre>
+                p {
+                    display: none;
+                  }
+                  
+          </pre></div>
+    </section>
+
+    <footer>
+        <p id="sec">© 2024 CSS Display Property Blog By Rajesh Kumar</p>
+    </footer>
+
+</body>
+</html>
