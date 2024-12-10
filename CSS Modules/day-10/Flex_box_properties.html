@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box Properties</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color: blue;
+            border:2px solid black ;
+            color: beige;
+            display: flex;
+            justify-content: center;
+        }
+        main{
+            margin: 0;
+        }
+        article{
+            margin: 0 10%;
+            background-color: aquamarine;
+            padding: 20px;
+            margin-bottom: 10px;
+            border: 2px solid black;
+            margin: 10px;
+        }
+        .topic{
+            background-color: rgb(8, 134, 120);
+            border:2px solid black ;
+            color: beige;
+            display: flex;
+            justify-content: center;
+            width: 300px;
+            height: 40px;
+            margin: 0 40%;
+            border-radius: 50%;
+            padding: 30px;
+           
+
+        }
+        pre{
+            font-size: 15px;
+            color: blue;
+        }
+        .container{
+            display: flex;
+            background-color: blueviolet;
+            width: 400px;
+            height: 60px;
+            border: 2px solid black;
+            
+        }
+        .container11{
+            display: flex;
+            flex-direction: row;
+            background-color: blueviolet;
+            width: 400px;
+            height: 60px;
+            border: 2px solid black;
+            
+        }.container12{
+            display: flex;
+            flex-direction: column;
+            background-color: blueviolet;
+            width: 400px;
+            height: 200px;
+            border: 2px solid black;
+            
+        }.container13{
+            display: flex;
+            flex-direction: row-reverse;
+            background-color: blueviolet;
+            width: 400px;
+            height: 60px;
+            border: 2px solid black;
+            
+        }.container14{
+            display: flex;
+            flex-direction: column-reverse;
+            background-color: blueviolet;
+            width: 400px;
+            height: 200px;
+            border: 2px solid black;
+            
+        }
+        .child{
+            background-color: rgb(250, 31, 31);
+            color: aliceblue;
+            margin: 10px;
+            text-align: center;
+            align-content: center;
+            width: 40px;
+            height: 40px;
+            border: 2px solid black;
+        }
+
+        .container1{
+            flex-direction: column;
+            background-color: blueviolet;
+            width: 300px;
+            height: 200px;
+            border: 2px solid black;
+        }
+        .container2{
+            display: flex;
+            flex-wrap: wrap;
+            background-color: blueviolet;
+            width: 400px;
+            height: 200px;
+            border: 2px solid black;
+
+        }
+        .container3{
+            display: flex;
+            justify-content: center;
+            background-color: blueviolet;
+            width: 400px;
+            height: 60px;
+            border: 2px solid black;
+
+        }
+        
+        .container4{
+            display: flex;
+            align-items: center;
+            background-color: blueviolet;
+            width: 400px;
+            height: 100px;
+            border: 2px solid black;
+
+        }
+        .container5{
+            display: flex;
+            flex-direction: column;
+            align-content: space-between;
+            background-color: blueviolet;
+            width: 400px;
+            height: 200px;
+            border: 2px solid black;
+
+        }
+        footer{
+            background-color: blue;
+            border:2px solid black ;
+            color: beige;
+            display: flex;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Flex Box Properties</h1>
+    </header>
+    <nav></nav>
+    <main>
+        <article>
+            <h2>Flexbox in CSS</h2>
+            <p>Flexbox (short for Flexible Box Layout) is a CSS layout model designed to arrange items in a one-dimensional space (either horizontally or vertically) within a container. Flexbox allows you to align items dynamically, making it easier to create complex layouts and handle responsiveness without using floats or positioning.
+            </p>
+        </article>
+        <div >
+            <h2 class="topic">Key Properties of Flexbox</h2>
+            <article>
+                <h3>1. Flex Container</h3>
+                <p>To activate Flexbox, you need to apply display: flex (or inline-flex) to the container element. This makes the children of this container "flex items."</p>
+                <h3>Exmple</h3>
+                <pre>
+                    .container {
+                        display: flex;  /* or inline-flex */
+                      }
+                      
+                    
+                </pre>
+                <div class="container">
+                    <div class="child">1</div>
+                    <div class="child">2</div>
+                    <div class="child">3</div>
+                </div>
+
+            </article>
+
+            <article>
+                <h3>2. Flex Direction
+                </h3>
+                <p>The flex-direction property defines the direction in which flex items are laid out in the container. It controls the main axis (horizontal or vertical).</p>
+                <h3>
+                    <ul>
+                        <li>row (default): Items are arranged horizontally (left to right).
+                        </li>
+                        <li>column: Items are arranged vertically (top to bottom).</li>
+                        <li>row-reverse: Items are arranged horizontally, but in reverse order.</li>
+                        <li>column-reverse: Items are arranged vertically, but in reverse order.</li>
+                    </ul>
+                </h3>
+                <h3>Example</h3>
+                <pre>
+                    .container {
+                        flex-direction: row;
+                    } 
+                </pre>
+                <div class="container11">
+                    <div class="child">1</div>
+                    <div class="child">2</div>
+                    <div class="child">3</div>
+                    
+                </div>
+                <h3>Example</h3>
+                <pre>
+                    .container {
+                        flex-direction: column;
+                    } 
+                </pre>
+                <div class="container12">
+                    <div class="child">1</div>
+                    <div class="child">2</div>
+                    <div class="child">3</div>
+                    
+                </div>
+                <h3>Example</h3>
+                <pre>
+                    .container {
+                        flex-direction: row-reverse;
+                    } 
+                </pre>
+                <div class="container13">
+                    <div class="child">1</div>
+                    <div class="child">2</div>
+                    <div class="child">3</div>
+                    
+                </div>
+                <h3>Example</h3>
+                <pre>
+                    .container {
+                        flex-direction: column-reverse;
+                    } 
+                </pre>
+                <div class="container14">
+                    <div class="child">1</div>
+                    <div class="child">2</div>
+                    <div class="child">3</div>
+                    
+                </div>
+
+            </article>
+            <article>
+                <h3>3. Flex Wrap
+                </h3><p>By default, Flexbox tries to fit all items on one line. You can use the flex-wrap property to allow the items to wrap onto the next line if there isn't enough space.
+                </p>                    
+                <h3>
+                    <ul>
+                        <li>nowrap (default): All items will be on one line.
+                        </li>
+                        <li>wrap: Items will wrap to the next line if needed.
+                        </li>
+                        <li>wrap: Items will wrap to the next line if needed.</li>
+                        <li>wrap-reverse: Items will wrap in reverse order.</li>
+                    </ul>
+                </h3>
+                <h3>Example</h3>
+                <pre>
+                    .container {
+                        flex-wrap: wrap;  /* Allows wrapping */
+                      }
+                      
+                </pre>
+                <div class="container2">
+                    <div class="child">1</div>
+                    <div class="child">2</div>
+                    <div class="child">3</div>
+                    <div class="child">4</div>
+                    <div class="child">5</div>
+                    <div class="child">6</div>
+                    <div class="child">7</div>
+                    <div class="child">8</div>
+                    <div class="child">9</div>
+                    <div class="child">10</div>
+                    <div class="child">11</div>
+                    <div class="child">12</div>
+                </div>
+         </article>
+
+         <article>
+            <h3>4. Justify Content
+            </h3>The justify-content property aligns items along the main axis (horizontal, in a row layout, or vertical in a column layout). It helps distribute space between items.
+            </p>                    
+            <h3>
+                <ul>flex-end: Items are aligned at the end of the container.
+                    <li>flex-start: Items are aligned at the beginning of the container.
+                    </li>
+                    <li>flex-end: Items are aligned at the end of the container.</li>
+                    <li>center: Items are centered.</li>
+                    <li>space-between: Items are evenly distributed, with space between them.</li>
+                    <li>space-around: Items are evenly distributed, with space around them.</li>
+                    <li>space-evenly: Items are evenly distributed, with equal space between them.</li>
+                </ul>
+            </h3>
+            <h3>Example</h3>
+            <pre>
+                .container {
+                    justify-content: center; /* Centers items horizontally */
+                  }
+                  
+            </pre>
+            <div class="container3">
+                <div class="child">1</div>
+                <div class="child">2</div>
+                <div class="child">3</div>
+            </div>
+           </article>
+
+
+           <article>
+            <h3>5. Align items
+            </h3>
+            <p>The align-items property aligns flex items along the cross axis (vertical, in a row layout, or horizontal in a column layout).            </p>                   
+            <h3>
+               <ul>
+                <li>flex-start: Items are aligned to the top (in a row) or left (in a column).
+                </li>
+                <li>flex-end: Items are aligned to the bottom (in a row) or right (in a column).
+                </li>
+                <li>center: Items are aligned at the center.
+                </li>
+                <li>baseline: Items are aligned based on their baseline (typically used for text).
+                </li>
+                <li>stretch (default): Items stretch to fill the container's height (in a row) or width (in a column).
+                    </li>
+               </ul>
+            </h3>
+            <h3>Example</h3>
+            <pre>
+                .container {
+                    align-items: center; /* Centers items vertically */
+                  }
+                  
+            </pre>
+            <div class="container4">
+                <div class="child">1</div>
+                <div class="child">2</div>
+                <div class="child">3</div>
+            </div>
+           </article>
+
+
+           <article>
+            <h3>6. Align Content
+            </h3>
+            <p>The align-content property is used when there are multiple lines of flex items, and it aligns the lines along the cross axis (vertical or horizontal). This property works only when the flex-wrap property is set to wrap.
+            </p>                   
+            <h3>
+               <ul>
+                <li>flex-start: Lines are packed toward the top (in a row) or left (in a column).</li>
+                <li>flex-end: Lines are packed toward the bottom (in a row) or right (in a column).</li>
+                <li>center: Lines are centered.</li>
+                <li>space-between: Lines are evenly distributed, with space between them.</li>
+                <li>space-around: Lines are evenly distributed, with space around them.</li>
+                <li>stretch (default): Lines stretch to fill the container.
+                </li>
+               </ul>
+            </h3>
+            <h3>Example</h3>
+            <pre>
+                .container {
+                    align-content: space-between; /* Distributes lines evenly */
+                  }
+                  
+            </pre>
+            <div class="container5">
+                <div class="child">1</div>
+                <div class="child">2</div>
+                <div class="child">3</div>
+            </div>
+           </article>
+
+        </div>
+
+    </main>
+    <footer>
+        <h4>© 2024 CSS Flex-Box Property Blog By Rajesh kumar</h4>
+    </footer>
+</body>
+</html>
