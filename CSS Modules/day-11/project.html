@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>play with flex box</title>
     <style>
+        body{
+            background-color: black;
+            color: #e8edef;
+            
+        }
         .parent{
             width: 600px;
             height: 400px;
@@ -14,6 +19,7 @@
             align-content: center;
             gap: 20px;
             flex-wrap: wrap;
+            margin: 20px;
 
 
         }
@@ -28,11 +34,318 @@
             font-size: 20px;
             font-weight: 500;
             border: 2px solid black;
+            color: black;
 
         }
+
+
+        .project{
+            width: 600px;
+            height: 400px;
+            background-color: #FEAFB2;
+            margin: 20px;
+            padding: 20px;
+        }
+        .header,.footer{
+            height: 70px;
+            width: 100%;
+            background-color: #97D0C7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: aliceblue;
+        }
+        .middle{
+            width: 100%;
+            height: 220px;
+            display: flex;
+            gap: 20px;
+            padding: 20px 0;
+        }
+        .aside{
+            width: 40%;
+            
+        }
+        .aside{
+            background-color: #5FB6B5;
+            color: rgb(233, 224, 224);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .article{
+            width: 100%;
+            background-color: #FD797B;
+           align-content: end;
+            
+        }
+        .art{
+            color: #e7dee7;
+            text-align: center;
+        }
+        .image{
+            display: flex;
+            align-items: flex-end;
+        }
+        .img1{
+            height: 100px;
+            width: 100px;
+            background-color: #D6D5D6;
+            margin: 20px;
+            color: gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .pro{
+            width: 600px;
+            height: 400px;
+            background-color: #C4EBFA;
+            padding: 20px;
+            margin: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .head, .foot{
+            width: 100%;
+            height: 10%;
+            background-color: #03BFB1;
+            display: flex;
+            color: #e7dee7;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .nav{
+            width: 100%;
+            height: 10%;
+            background-color: #33C361;
+            display: flex;
+            color: #e7dee7;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .main
+        {
+            width: 100%;
+            height: 55%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            gap: 20px;
+            
+        }
+        
+        .as{
+            width: 30%;
+            background-color: #6EDB6E;
+            color: rgb(233, 224, 224);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .mid{
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            
+        }
+        .cont{
+            height: 50%;
+            background-color: #0F98C6;
+            color: #e7dee7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+           
+        }
+        .sec{
+            height: 50%;
+            background-color: #0F98C6;
+            color: #e7dee7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .box{
+            width: 600px;
+            height: 400px;
+            background-color: #FFFFFF;
+            padding: 20px;
+            margin: 20px;
+            
+        }
+        .box1{
+            width: 100%;
+            height: 20%;
+            background-color: #FF4DA6;
+            
+
+
+        }
+        .box2{
+            width: 100%;
+            height: 50%;
+            padding-top: 20px;
+            display: flex;
+            gap: 20px;
+
+        }
+        .box3{
+            height: 100%;
+            width: 70%;
+            background-color: #FF037E;
+            
+
+        }
+        .box4{
+            height: 100%;
+            width: 30%;
+            background-color: #CE0468;
+        }
+        .box5{
+            width: 100%;
+            height: 20%;
+            background-color: #802755;
+            margin-top: 20px;
+
+        }
+        .con{
+            width: 600px;
+            height: 400px;
+            background-color: #FFFFFF;
+            margin: 20px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .con1{
+            width: 100%;
+            height: 80%;
+            display: flex;
+            gap: 50px;
+           
+        }
+        .con2{
+            width: 100%;
+            height: 20%;
+            background-color: #2F2D2E;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40PX;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .col1{
+            width: 20%;
+            height: 100%;
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+
+        .col2{
+            width: 80%;
+            height: 100%;
+            margin-right: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .cont1{
+            width: 100%;
+            height: 12%;
+            background-color: #03D29E;
+
+
+        }
+        .cont2{
+            width: 100%;
+            height: 14%;
+            background-color: #4FA7FF;
+        }
+
+        .cont3{
+            width: 100%;
+            height: 25%;
+            background-color: #FF7674;
+        }
+        .div1{
+
+            width: 100%;
+            height: 20%;
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .div2{
+            width: 100%;
+            height: 30%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .div3{
+            width: 100%;
+            height: 45%;
+        }
+        .cont4{
+            height: 100%;
+            width: 32%;
+            background-color: #03D29E;
+        }
+
+        .cont5{
+            height: 100%;
+            width: 49%;
+            background-color: #4FA7FF;
+        }
+        .cont6{
+            height: 100%;
+            width: 100%;
+            background-color: #FF7674;
+        }
+
+        .plate{
+            width: 600px;
+            height: 400px;
+            background-color: #FFFFFF;
+            margin: 20px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .plate1,.plate2,.plate3,.plate4{
+            width: 100%;
+            height: 21%;
+            display: flex;
+            gap: 20px;
+        }
+       .cls1, .cls2, .cls3, .cls4, .cls5{
+        height: 100%;
+
+        background-color: #99CF1C;
+        border: 5px solid black;
+       } 
+       .plate1{
+        gap: 50px;
+       }   
+        
     </style>
 </head>
 <body>
+    
     <h1>Play with Flex Box</h1>
     <div class="parent">
         <div class="child">1</div>
@@ -43,5 +356,103 @@
         <div class="child">6</div>
 
     </div>
+
+    <div class="project">
+      <div class="header">Header</div>
+        <div class="middle">
+            <div class="aside">Aside</div>
+            <div class="article">
+                <div class="art">
+                    <div>Article</div>
+                </div>
+                <div class="image">
+                    <div class="img1">Image</div>
+                    <div class="img1">Image</div>
+                    <div class="img1">Image</div>
+                </div>
+            </div>
+        </div>
+      <div class="footer">Footer</div>
+    </div>
+
+
+    <div class="pro">
+        <div class="head">Header</div>
+        <div class="nav">Navigation</div>
+        <div class="main">
+            <div class="as">Aside</div>
+            <div class="mid">
+                <div class="cont">Contant</div>
+                <div class="sec">Section</div>
+            </div>
+        </div>
+        <Footer class="foot">Footer</Footer>
+    </div>
+
+
+    <div class="box">
+        <div class="box1"></div>
+        <div class="box2">
+            <div class="box3"></div>
+            <div class="box4"></div>
+        </div>
+        <div class="box5"></div>
+    </div>
+
+    <div class="con">
+        <div class="con1">
+            <div class="col1">
+                <div class="cont1"></div>
+                <div class="cont1"></div>
+                <div class="cont1"></div>
+                <div class="cont2"></div>
+                <div class="cont2"></div>
+                <div class="cont3"></div>
+            </div>
+            <div class="col2">
+                <div class="div1">
+                   <div class="cont4"></div>
+                   <div class="cont4"></div>
+                   <div class="cont4"></div>
+                </div>
+                <div class="div2">
+                    <div class="cont5"></div>
+                    <div class="cont5"></div>
+                </div>
+                <div class="div3">
+                    <div class="cont6"></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="con2">RESPONSIVE CARD LAYOUT</div>
+
+    </div>
+
+    <div class="plate">
+        <div class="plate1">
+            <div class="cls1" style="flex-grow: 1;"></div>
+            <div class="cls2" style="flex-grow: 8;"></div>
+            <div class="cls3" style="flex-grow: 1;"></div>
+        </div>
+        <div class="plate2">
+            <div class="cls1" style="flex-grow: 7;"></div>
+            <div class="cls2" style="flex-grow: 1;"></div>
+            <div class="cls3" style="flex-grow: 3;"></div>
+        </div>
+        <div class="plate3">
+            <div class="cls1" style="flex-grow: 1;"></div>
+            <div class="cls2" style="flex-grow: 3;"></div>
+            <div class="cls3" style="flex-grow: 7;"></div>
+        </div>
+        <div class="plate4">
+            <div class="cls1" style="flex-grow: 3;"></div>
+            <div class="cls2" style="flex-grow: 1;"></div>
+            <div class="cls3" style="flex-grow: 3;"></div>
+            <div class="cls4" style="flex-grow: 1;"></div>
+            <div class="cls5" style="flex-grow: 3;"></div>
+        </div>
+    </div>
+
 </body>
 </html>
