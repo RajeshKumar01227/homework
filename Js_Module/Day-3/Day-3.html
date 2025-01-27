@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator and Conditional Statement</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            background:linear-gradient(90deg,rgb(174, 113, 232),rgb(167, 149, 149));
+        }
+        header{
+            display: flex;
+            justify-content: center;
+            background: linear-gradient(90deg,black,blueviolet);
+            font-style: oblique;
+            font-family: Cambria;
+            font-size: larger;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 50px;
+
+        }
+        h1{
+            color: azure;
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            padding: 20px;
+        }
+        h2{
+            color: rgb(23, 54, 81);
+        }
+        h3{
+            color: rgb(4, 22, 63);
+        }
+        footer{
+            display: flex;
+            justify-content: center;
+            background: linear-gradient(90deg,black,blueviolet);
+            font-style: oblique;
+            font-family: Cambria;
+            font-size: larger;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 50px;
+            color: aliceblue;
+           
+        }
+        .list{
+            border: 2px solid black;
+            margin: 10px;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Operator and Conditional Statement</h1></header>
+    <div class="box">
+        <h2>Operators in JavaScript</h2>
+        <h3>Operators are symbols that perform operations on variables and values. JavaScript has several types of operators:</h3>
+        <ol>
+            <li class="list"><h3>Arithmetic Operators</h3>
+                <ul>
+                    <li style="list-style-type:disc;"><h3>Used for mathematical operations. </h3>
+                        <li><h3>Example:</h3>
+                            <ul style="list-style: circle;">
+                                <li >+ (Addition): 5 + 3 → 8</li>
+                                <li>- (Subtraction): 5 - 3 → 2</li>
+                                <li>* (Multiplication): 5 * 3 → 15</li>
+                                <li>/ (Division): 6 / 3 → 2</li>
+                                <li>% (Modulus): 5 % 3 → 2 (remainder)</li>
+                                <li>++ (Increment): let x = 5; x++ → 6</li>
+                                <li>-- (Decrement): let x = 5; x-- → 4</li>
+                            </ul>
+                        </li>
+                    </li>
+                    
+                </ul>
+
+            </li>
+
+
+            <li class="list"><h3>Assignment Operators</h3>
+                <ul>
+                    <li style="list-style-type:disc;"><h3>Used to assign values to variables.
+                    </h3>
+                        <li><h3>Example:</h3>
+                            <ul style="list-style: circle;">
+                                <li>= (Assign): let x = 5;
+                                </li>
+                                <li>+= (Add and assign): x += 3; // x = x + 3
+                                </li>
+                                <li>-= (Subtract and assign): x -= 2; // x = x - 2
+                                </li>
+                                <li>*= (Multiply and assign): x *= 2; // x = x * 2
+                                </li>
+                                <li>/= (Divide and assign): x /= 2; // x = x / 2
+                                </li>
+                            </ul>
+                        </li>
+                    </li>
+                    
+                </ul>
+
+            </li>
+
+
+            <li class="list"><h3>Comparison Operators
+            </h3>
+                <ul>
+                    <li style="list-style-type:disc;"><h3>Used to compare values and return a boolean (true or false).
+                    </h3>
+                        <li><h3>Example:</h3>
+                            <ul style="list-style: circle;">
+                                <li>== (Equal to): 5 == '5' → true (loose comparison)
+                                </li>
+                                <li>!= (Not equal to): 5 != 3 → true
+                                </li>
+                                <li>!= (Not equal to): 5 != 3 → true
+                                </li>
+                                <li>!== (Strict not equal to): 5 !== '5' → true
+                                </li>
+                                <li>> (Greater than): 5 > 3 → true
+                                </li>
+                                <li> < (Less than): 3 < 5 → true
+                                </li>
+                                <li>>= (Greater than or equal to): 5 >= 5 → true
+                                </li>
+                                <li><= (Less than or equal to): 3 <= 5 → true
+                                </li>
+                            </ul>
+                        </li>
+                    </li>
+                    
+                </ul>
+
+            </li>
+
+
+
+            <li class="list"><h3>Logical Operators
+            </h3>
+                <ul>
+                    <li style="list-style-type:disc;"><h3>Used to combine multiple conditions or return boolean values.
+                    </h3>
+                        <li><h3>Example:</h3>
+                            <ul style="list-style: circle;">
+                                <li>&& (AND): true && false → false
+                                </li>
+                                <li>|| (OR): true || false → true
+                                </li>
+                                <li>! (NOT): !true → false
+                                </li>
+                            </ul>
+                        </li>
+                    </li>
+                    
+                </ul>
+
+            </li>
+
+
+
+
+            <li class="list"><h3>Ternary (Conditional) Operator
+            </h3>
+                <ul>
+                    <li style="list-style-type:disc;"><h3>A shorthand for if-else.
+                    </h3>
+                    <h3>Syntax: condition ? expression_if_true : expression_if_false
+                    </h3>
+                        <li><h3>Example:</h3>
+                            <ul style="list-style: circle;">
+                                <li>let x = 10; let result = x > 5 ? 'Yes' : 'No'; → result = 'Yes'</li>
+                            </ul>
+                        </li>
+                    </li>
+                    
+                </ul>
+
+            </li>
+
+
+
+
+            <li class="list"><h3>Type Operators
+            </h3>
+                <ul>
+                    <li style="list-style-type:disc;"><h3>Used to check types of variables.
+                    </h3>
+                        <li><h3>Example:</h3>
+                            <ul style="list-style: circle;">
+                                <li>typeof: typeof 'hello' → "string"
+                                </li>
+                                <li>instanceof: [] instanceof Array → true
+                                </li>
+                            </ul>
+                        </li>
+                    </li>
+                    
+                </ul>
+
+            </li>
+            
+        </ol>
+
+        <h2>Conditional Statements in JavaScript</h2>
+        <h3>Conditional statements allow you to execute different blocks of code based on certain conditions.</h3>
+        <ol>
+            <li class="list"><h3>if Statement
+            </h3>
+                <ul>
+                    <li style="list-style-type:disc;"><h3>Executes a block of code if a specified condition is true.
+                    </h3>
+                        <li><h3>Example:</h3>
+                            <ul style="list-style: circle;">
+                                <pre>
+                                    let age = 18;
+                                    if (age >= 18) {
+                                        console.log("You are an adult.");
+                                    }
+                                    </pre>
+                            </ul>
+                        </li>
+                    </li>
+                    
+                </ul>
+
+            </li>
+
+
+            <li class="list"><h3>if...else Statement
+            </h3>
+                <ul>
+                    <li style="list-style-type:disc;"><h3>Executes one block of code if the condition is true, and another block if it is false.
+                    </h3>
+                        <li><h3>Example:</h3>
+                            <pre>
+                                let age = 16;
+                                if (age >= 18) {
+                                    console.log("You are an adult.");
+                                } else {
+                                    console.log("You are a minor.");
+                                }
+                                
+                            </pre>
+                        </li>
+                    </li>
+                    
+                </ul>
+
+            </li>
+
+
+            <li class="list"><h3>else if Statement
+            </h3>
+                <ul>
+                    <li style="list-style-type:disc;"><h3>Used to check multiple conditions in sequence.
+                    </h3>
+                        <li><h3>Example:</h3>
+                            <ul style="list-style: circle;">
+                                <pre>
+                                    let age = 20;
+                                    if (age < 18) {
+                                        console.log("You are a minor.");
+                                    } else if (age >= 18 && age < 65) {
+                                        console.log("You are an adult.");
+                                    } else {
+                                        console.log("You are a senior.");
+                                    }
+                                    </pre>
+                            </ul>
+                        </li>
+                    </li>
+                    
+                </ul>
+
+            </li>
+
+
+
+            <li class="list"><h3>switch Statement
+            </h3>
+                <ul>
+                    <li style="list-style-type:disc;"><h3>Used to execute one of many blocks of code based on a specific value.
+                    </h3>
+                        <li><h3>Example:</h3>
+                            <ul style="list-style: circle;">
+                               <pre>
+                                let day = 3;
+                                switch (day) {
+                                    case 1:
+                                        console.log("Monday");
+                                        break;
+                                    case 2:
+                                        console.log("Tuesday");
+                                        break;
+                                    case 3:
+                                        console.log("Wednesday");
+                                        break;
+                                    default:
+                                        console.log("Invalid day");
+                                }
+                                
+                                
+                               </pre>
+                            </ul>
+                        </li>
+                    </li>
+                    
+                </ul>
+
+            </li>
+        </ol>
+    </div>
+    <footer> <h4>© 2025 Blogs  || Designed by Rajesh Kumar</h4></footer>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Number Game</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(90deg, #070706,rgb(191, 70, 151));
+            text-align: center;
+            
+            
+        }
+        .box{
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center ;
+           justify-content: center;
+            width: 400px;
+            height: 300px;
+            border: 10px solid , #B74491;
+            color: #e997cd;
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding: 20px;
+            background-image: url(./download.jpeg );
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 20px;
+            font-weight: bold;
+            box-shadow: 0px 0px 40px 0px #0c0b0c;
+            
+        }
+        p{
+            text-shadow: rgb(145, 145, 27);
+        }
+        input{
+            color: rgb(218, 201, 201);
+            background-color: #B74491;
+            border-radius: 20px;
+
+        }
+        button{
+            margin: 10px;
+            color: rgb(203, 203, 214);
+            background-color: green;
+        }
+        ::placeholder{
+            color: aliceblue;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>Enter a number between 1 to 10</p>
+        <input type="number" placeholder="Enter a Number">
+        <button>check</button>
+
+    </div>
+    <script src="./Day-5.js"></script>
+</body>
+</html>

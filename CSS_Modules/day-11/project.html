@@ -6,9 +6,26 @@
     <title>play with flex box</title>
     <style>
         body{
-            background-color: black;
-            color: #e8edef;
-            
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           padding: 0;
+           margin: 0;
+           background-color: #e9e0e0;
+        }
+
+
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #600570;
+            background-color: #FEAFB2;
+            font-family: cursive;
+            font-weight: 500;
+            border: 2px solid #2F2D2E;
+            width: 100%;
         }
         .parent{
             width: 600px;
@@ -345,8 +362,10 @@
     </style>
 </head>
 <body>
-    
-    <h1>Play with Flex Box</h1>
+    <header>
+        <h1>Layout practice</h1>
+    </header>
+
     <div class="parent">
         <div class="child">1</div>
         <div class="child">2</div>
@@ -452,6 +471,11 @@
             <div class="cls4" style="flex-grow: 1;"></div>
             <div class="cls5" style="flex-grow: 3;"></div>
         </div>
+    </div>
+
+    <div class="paly">
+        
+
     </div>
 
 </body>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Type in JavaScript</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            background:linear-gradient(90deg,rgb(174, 113, 232),rgb(167, 149, 149));
+        }
+        header{
+            display: flex;
+            justify-content: center;
+            background: linear-gradient(90deg,black,blueviolet);
+            font-style: oblique;
+            font-family: Cambria;
+            font-size: larger;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 50px;
+
+        }
+        h1{
+            color: azure;
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            padding: 20px;
+        }
+        h2{
+            color: rgb(23, 54, 81);
+        }
+        h3{
+            color: rgb(4, 22, 63);
+        }
+        footer{
+            display: flex;
+            justify-content: center;
+            background: linear-gradient(90deg,black,blueviolet);
+            font-style: oblique;
+            font-family: Cambria;
+            font-size: larger;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 50px;
+            color: aliceblue;
+           
+        }
+        li{
+            border: 2px solid black;
+            margin: 10px;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+   <header> <h1>Data type in JavaScript</h1></header>
+   <div class="box">
+    <h2>Primitive Data Types (Immutable)</h2>
+    <ol>
+        <li><h3>string: Represents a sequence of characters.</h3>
+            <h3>Example: "Hello, World!"</h3></li>
+        
+        <li><h3>Number: Represents both integer and floating-point numbers.</h3>
+            <h3>Example: 42, 3.14</h3>
+        </li>
+        <li>
+            <h3>BigInt: Represents integers larger than the range allowed by the Number type.
+            </h3>
+            <h3>Example: 123456789012345678901234567890n
+            </h3>
+        </li>
+        <li>
+            <h3>Boolean: Represents a logical value, either true or false.
+            </h3>
+            <h3>Example: true, false
+            </h3>
+        </li>
+        <li>
+            <h3>undefined: A variable that has been declared but not assigned a value.
+            </h3>
+            <h3>Example: let x; // x is undefined
+            </h3>
+        </li>
+        <li>
+            <h3>null: Represents the intentional absence of any value.
+            </h3>
+            <h3>Example: let y = null;
+            </h3>
+        </li>
+        <li>
+            <h3>Symbol: A unique and immutable value used primarily for object properties.
+            </h3>
+            <h3>Example: let sym = Symbol('description');
+            </h3>
+        </li>
+    </ol>
+
+   </div>
+   <div class="box">
+    <h2>Non-Primitive (Reference) Data Type</h2>
+    <ol>
+        <li>
+            <h3>
+                Object: A collection of key-value pairs, which can include different data types.
+            </h3>
+            <h3>
+                Example: { name: "Alice", age: 25 }
+            </h3>
+        </li>
+    </ol>
+</div>
+
+<footer> <h4>© 2025 Blogs  || Designed by Rajesh Kumar</h4></footer>
+<script src="./script.js"></script>
+    
+    
+</body>
+</html>
