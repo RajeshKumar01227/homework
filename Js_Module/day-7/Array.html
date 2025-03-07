@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays in Javascript</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            background:linear-gradient(90deg,rgb(174, 113, 232),rgb(167, 149, 149));
+        }
+        header{
+            display: flex;
+            justify-content: center;
+            background: linear-gradient(90deg,black,blueviolet);
+            font-style: oblique;
+            font-family: Cambria;
+            font-size: larger;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 50px;
+
+        }
+        h1{
+            color: azure;
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            padding: 20px;
+        }
+        h2{
+            color: rgb(23, 54, 81);
+        }
+        h3{
+            color: rgb(4, 22, 63);
+        }
+        footer{
+            display: flex;
+            justify-content: center;
+            background: linear-gradient(90deg,black,blueviolet);
+            font-style: oblique;
+            font-family: Cambria;
+            font-size: larger;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 50px;
+            color: aliceblue;
+           
+        }
+        .list{
+            border: 2px solid black;
+            margin: 10px;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Arrays in JavaScript</h1></header>
+    <div class="box">
+        <h2>A string in JavaScript is a sequence of characters used to represent text. Strings are enclosed in either single quotes (''), double quotes (""), or backticks (``).
+        </h2>
+        <ol>
+            
+            <li class="list"><h3>Creating Arrays</h3>
+                <ul>
+                    <li style="list-style-type:disc;"><h3>Using Array Literals (Recommended):</h3>
+                        
+                            <ul style="list-style: circle;">
+                                <li><h3>Syntax:</h3>
+                                <pre>
+                                    let fruits = ["Apple", "Banana", "Cherry"];
+                                </pre></li>
+                                
+                            </ul>
+                    </li>
+
+                    <li style="list-style-type:disc;"><h3>Using Array Literals (Recommended):</h3>
+                        
+                        <ul style="list-style: circle;">
+                            <li><h3>Syntax:</h3>
+                            <pre>
+                                let colors = new Array("Red", "Green", "Blue");
+                            </pre></li>
+                            
+                        </ul>
+                </li>
+
+                <li style="list-style-type:disc;"><h3>Empty Array:</h3>
+                        
+                    <ul style="list-style: circle;">
+                        <li><h3>Syntax:</h3>
+                        <pre>
+                            let emptyArray = [];
+                        </pre></li>
+                        
+                    </ul>
+            </li>
+                    
+                </ul>
+            </li>
+
+
+            <li class="list"><h3>Accessing Array Elements</h3>
+                <ul>
+                    <li style="list-style-type:disc;"><h3>You can access elements using zero-based indexing (0 is the first element).</h3>
+                            <ul style="list-style: circle;">
+                                <li><h3>Syntax:</h3>
+                                    <h3>You can get the number of characters using .length:</h3>
+                                <pre>
+                                    let numbers = [10, 20, 30, 40];
+                                    console.log(numbers[0]); // 10
+                                    console.log(numbers[2]); // 30
+                                    console.log(numbers[numbers.length - 1]); // Last element (40)
+                                </pre></li>
+                                <li>If you try to access an out-of-bounds index, you get undefined.
+                                </li>
+                                
+                            </ul>
+                    </li>
+                    
+                </ul>
+            </li>
+
+
+            <li class="list"><h3>Modifying Arrays</h3>
+                <ul>
+                    <li style="list-style-type:disc;"><h3>Changing an Element</h3>
+                        
+                            <ul style="list-style: circle;">
+                                <li><h3>Syntax:</h3>
+                                <pre>
+                                    let fruits = ["Apple", "Banana", "Cherry"];
+                                    fruits[1] = "Mango"; // Change "Banana" to "Mango"
+                                    console.log(fruits); // ["Apple", "Mango", "Cherry"]
+                                </pre></li>
+                            </ul>
+
+                            <li style="list-style-type:disc;"><h3>Adding Elements</h3>
+
+                            <ul style="list-style: circle;">
+                                <li><h3>Syntax:</h3>
+                                <pre>
+                                    let arr = [1, 2, 3];
+                                    arr[3] = 4; // Adds a new element at index 3
+                                    console.log(arr); // [1, 2, 3, 4]
+                                    
+                                </pre></li>
+                            </ul>
+
+                            
+                    </li>
+                </ul>
+            </li>
+
+
+            <li class="list"><h3>Array Properties</h3>
+                <ul>
+                    <li style="list-style-type:disc;"><h3>.length Property:</h3>
+                        <li>The .length property returns the number of elements in an array. </li>
+                        
+                            <ul style="list-style: circle;">
+                                <li><h3>Syntax:</h3>
+                                <pre>
+                                    let numbers = [10, 20, 30, 40];
+                                    console.log(numbers.length); // 4
+                                </pre></li>
+                            </ul>
+                    </li>
+                </ul>
+            </li>
+            
+
+            
+            <li class="list"><h3>Array Methods</h3>
+                <ul>
+                    <li style="list-style-type:disc;"><h3>Adding and Removing Elements</h3>
+                        
+                            <ul style="list-style: circle;">
+                                <li><h3>Syntax:</h3>
+                                <pre>
+                                    let fruits = ["Apple", "Banana", "Cherry"];
+
+                                    // Add elements
+                                    fruits.push("Mango"); // ["Apple", "Banana", "Cherry", "Mango"]
+                                    fruits.unshift("Pineapple"); // ["Pineapple", "Apple", "Banana", "Cherry", "Mango"]
+
+                                    // Remove elements
+                                    fruits.pop(); // Removes "Mango"
+                                    fruits.shift(); // Removes "Pineapple"
+                                    console.log(fruits); // ["Apple", "Banana", "Cherry"]
+
+                                </pre></li>
+                            </ul>
+                    </li>
+
+
+                    <li style="list-style-type:disc;"><h3>Concatenating Arrays (.concat())</h3>
+                        
+                        <ul style="list-style: circle;">
+                            <li><h3>Syntax:</h3>
+                            <pre>
+                                let arr1 = [1, 2];
+                                let arr2 = [3, 4];
+                                let result = arr1.concat(arr2);
+                                console.log(result); // [1, 2, 3, 4]
+                            </pre></li>
+                        </ul>
+                 </li>
+
+
+                 <li style="list-style-type:disc;"><h3>Modifying Array (.splice(start, deleteCount, item1, item2, ...))</h3>
+                        
+                    <ul style="list-style: circle;">
+                        <li><h3>Syntax:</h3>
+                        <pre>
+                            let fruits = ["Apple", "Banana", "Cherry"];
+                            fruits.splice(1, 1, "Mango", "Orange"); 
+                            console.log(fruits); // ["Apple", "Mango", "Orange", "Cherry"]
+
+                        </pre></li>
+                    </ul>
+             </li>
+
+
+
+                </ul>
+            </li>
+
+
+            <li class="list"><h3>Searching in an Array</h3>
+                <ul>
+                        
+                            <ul style="list-style: circle;">
+                                <li><h3>Syntax:</h3>
+                                <pre>
+                                    let fruits = ["Apple", "Banana", "Cherry"];
+                                    console.log(fruits.indexOf("Banana")); // 1
+                                    console.log(fruits.includes("Mango")); // false
+                                </pre></li>
+                                
+                            </ul>
+                    </li>
+                    
+                </ul>
+            </li>
+
+
+            <li class="list"><h3>Sorting and Reversing</h3>
+                <ul>
+                    ]<li style="list-style-type:disc;"><h3>Changing an Element</h3>
+                        
+                            <ul style="list-style: circle;">
+                                <li><h3>Syntax:</h3>
+                                <pre>
+                                    let numbers = [40, 100, 1, 5];
+                                    numbers.sort((a, b) => a - b); // Ascending order
+                                    console.log(numbers); // [1, 5, 40, 100]
+                                </pre></li>
+                            </ul>
+                    </li>
+
+                    <li style="list-style-type:disc;"><h3>Reversing (.reverse())</h3>
+                        
+                        <ul style="list-style: circle;">
+                            <li><h3>Syntax:</h3>
+                            <pre>
+                                let names = ["Alice", "Bob", "Charlie"];
+                                names.reverse();
+                                console.log(names); // ["Charlie", "Bob", "Alice"]
+                            </pre></li>
+                        </ul>
+                </li>
+
+
+                </ul>
+            </li>
+
+
+
+            <li class="list"><h3>Iterating Through Arrays</h3>
+                <ul>
+                   <li style="list-style-type:disc;"><h3>Using for Loop</h3>
+
+                            <ul style="list-style: circle;">
+                                <li><h3>Syntax:</h3>
+                                <pre>
+                                    let arr = ["a", "b", "c"];
+                                    for (let i = 0; i < arr.length; i++) {
+                                        console.log(arr[i]);
+                                    }
+                                    
+                                </pre></li>
+                            </ul>
+                    </li>
+
+                   <li style="list-style-type:disc;"><h3>Using forEach()</h3>
+
+                        <ul style="list-style: circle;">
+                            <li><h3>Syntax:</h3>
+                            <pre>
+                                let numbers = [1, 2, 3];
+                                numbers.forEach((num) => console.log(num * 2)); // 2, 4, 6
+
+                            </pre></li>
+                        </ul>
+                </li>
+
+                </ul>
+            </li>
+
+
+
+
+            <li class="list"><h3>Array Transformatio</h3>
+                <ul>
+                    <h3><li style="list-style-type:disc;"><h3>Using .map()</h3>
+
+                            <ul style="list-style: circle;">
+                                <li><h3>Syntax:</h3>
+                                <pre>
+                                    let numbers = [1, 2, 3, 4];
+                                    let squared = numbers.map(num => num ** 2);
+                                    console.log(squared); // [1, 4, 9, 16]
+
+                                </pre></li>
+                            </ul>
+                    </li>
+
+                    <li style="list-style-type:disc;"><h3>Using .filter()</h3>
+
+                        <ul style="list-style: circle;">
+                            <li><h3>Syntax:</h3>
+                            <pre>
+                                let numbers = [1, 2, 3, 4, 5, 6];
+                                let evens = numbers.filter(num => num % 2 === 0);
+                                console.log(evens); // [2, 4, 6]
+                            </pre></li>
+                        </ul>
+
+
+                <li style="list-style-type:disc;"><h3>Using .reduce()</h3>
+                    <ul style="list-style: circle;">
+                        <li><h3>Syntax:</h3>
+                        <pre>
+                            let numbers = [1, 2, 3, 4];
+                            let sum = numbers.reduce((acc, num) => acc + num, 0);
+                            console.log(sum); // 10
+
+                        </pre></li>
+                    </ul>
+            </li>
+
+            </ul>
+        </li>
+
+
+            <li class="list"><h3>Checking If an Array Contains Something</h3>
+                <ul>
+                    <h3><li style="list-style-type:disc;"><h3>Checking if a Value Exists (.includes())</h3>
+
+                            <ul style="list-style: circle;">
+                                <li><h3>Syntax:</h3>
+                                <pre>
+                                    let arr = [10, 20, 30];
+                                    console.log(arr.includes(20)); // true
+
+                                </pre></li>
+                            </ul>
+                    </li>
+
+                    <li style="list-style-type:disc;"><h3>Checking If Every Element Matches (.every())</h3>
+
+                        <ul style="list-style: circle;">
+                            <li><h3>Syntax:</h3>
+                            <pre>
+                                let numbers = [2, 4, 6];
+                                console.log(numbers.every(num => num % 2 === 0)); // true
+
+                            </pre></li>
+                        </ul>
+                </li>
+
+
+                <li style="list-style-type:disc;"><h3>Checking If Some Elements Match (.some())</h3>
+                    <ul style="list-style: circle;">
+                        <li><h3>Syntax:</h3>
+                        <pre>
+                            let numbers = [1, 3, 6];
+                            console.log(numbers.some(num => num % 2 === 0)); // true (because 6 is even)
+
+                        </pre></li>
+                    </ul>
+                </li>
+            </li>
+            
+
+            
+
+
+   
+        </ol>
+    </div>
+    <footer> <h4>© 2025 Blogs  || Designed by Rajesh Kumar</h4></footer>
+</body>
+</html>

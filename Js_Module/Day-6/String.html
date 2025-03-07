@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sting in Javascript</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            background:linear-gradient(90deg,rgb(174, 113, 232),rgb(167, 149, 149));
+        }
+        header{
+            display: flex;
+            justify-content: center;
+            background: linear-gradient(90deg,black,blueviolet);
+            font-style: oblique;
+            font-family: Cambria;
+            font-size: larger;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 50px;
+
+        }
+        h1{
+            color: azure;
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            padding: 20px;
+        }
+        h2{
+            color: rgb(23, 54, 81);
+        }
+        h3{
+            color: rgb(4, 22, 63);
+        }
+        footer{
+            display: flex;
+            justify-content: center;
+            background: linear-gradient(90deg,black,blueviolet);
+            font-style: oblique;
+            font-family: Cambria;
+            font-size: larger;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 50px;
+            color: aliceblue;
+           
+        }
+        .list{
+            border: 2px solid black;
+            margin: 10px;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Sting in JavaScript</h1></header>
+    <div class="box">
+        <h2>A string in JavaScript is a sequence of characters used to represent text. Strings are enclosed in either single quotes (''), double quotes (""), or backticks (``).
+        </h2>
+        <ol>
+            
+            <li class="list"><h3>Creating Strings</h3>
+                <ul>
+                    <li style="list-style-type:disc;"><h3>You can create a string using:</h3>
+                        
+                            <ul style="list-style: circle;">
+                                <li><h3>Syntax:</h3>
+                                <pre>
+                                    let str1 = "Hello, World!";  // Double quotes
+                                    let str2 = 'JavaScript';     // Single quotes
+                                    let str3 = `Template String`; // Backticks (Template literals)
+                                   
+                                </pre></li>
+                                
+                            </ul>
+                    </li>
+                    
+                </ul>
+            </li>
+
+
+            <li class="list"><h3>String Properties</h3>
+                <ul>
+                    <li style="list-style-type:disc;"><h3>Strings in JavaScript are immutable (cannot be changed) but can be reassigned.</h3>
+                        
+                            <ul style="list-style: circle;">
+                                <li><h3>Length of a String</h3>
+                                    <h3>You can get the number of characters using .length:</h3>
+                                <pre>
+                                    let message = "Hello";
+                                    console.log(message.length); // Output: 5
+                                </pre></li>
+                                
+                            </ul>
+                    </li>
+                    
+                </ul>
+            </li>
+
+
+            <li class="list"><h3>String Methods</h3>
+                <ul>
+                    <li style="list-style-type:disc;"><h3>Changing Case </h3>
+                        
+                            <ul style="list-style: circle;">
+                                <li><h3>Syntax:</h3>
+                                <pre>
+                                    let text = "JavaScript";
+                                    console.log(text.toUpperCase()); // "JAVASCRIPT"
+                                    console.log(text.toLowerCase()); // "javascript"
+                                </pre></li>
+                            </ul>
+
+                            <li style="list-style-type:disc;"><h3>Extracting Parts of a String</h3>
+
+                            <ul style="list-style: circle;">
+                                <li>.slice(start, end) → Extracts a portion of a string.</li>
+                                <li>.substring(start, end) → Similar to slice but doesn't accept negative indexes.</li>
+                                <li>.substr(start, length) → Extracts a part of a string based on a starting index and length. </li>
+                                <li><h3>Syntax:</h3>
+                                <pre>
+                                    let str = "Hello, World!";
+                                    console.log(str.slice(0, 5));     // "Hello"
+                                    console.log(str.substring(0, 5)); // "Hello"
+                                    console.log(str.substr(7, 5));    // "World"
+                                </pre></li>
+                            </ul>
+
+                            <li style="list-style-type:disc;"><h3>Finding a Substring</h3>
+
+
+                            <ul style="list-style: circle;">
+                                <li>.indexOf("text") → Returns the index of the first occurrence.</li>
+                                <li>.lastIndexOf("text") → Returns the index of the last occurrence.                                </li>
+                                <li>.includes("text") → Returns true if the string is found.</li>
+                                <li>.startsWith("text") → Checks if the string starts with a specific substring. </li>
+                                <li>.endsWith("text") → Checks if the string ends with a specific substring</li>
+                                <li><h3>Syntax:</h3>
+                                <pre>
+                                    let text = "Hello, JavaScript!";
+                                    console.log(text.indexOf("JavaScript"));  // 7
+                                    console.log(text.lastIndexOf("o"));       // 4
+                                    console.log(text.includes("Java"));       // true
+                                    console.log(text.startsWith("Hello"));    // true
+                                    console.log(text.endsWith("!"));          // true
+                                </pre></li>
+                            </ul>
+
+
+                            <li style="list-style-type:disc;"><h3>Replacing Text</h3>
+
+                                <ul style="list-style: circle;">
+                                    <li>.replace("old", "new") → Replaces the first occurrence.
+                                    </li>
+                                    <li>.replaceAll("old", "new") → Replaces all occurrences.
+                                    </li>
+                                    <li><h3>Syntax:</h3>
+                                    <pre>
+                                        let sentence = "I love JavaScript!";
+                                        console.log(sentence.replace("JavaScript", "Python")); // "I love Python!"
+                                        console.log(sentence.replaceAll("o", "O")); // "I lOve JavaScript!"
+                                    </pre></li>
+                                </ul>
+
+
+                                <li style="list-style-type:disc;"><h3>Trimming White Spaces</h3>
+        
+                                    <ul style="list-style: circle;">
+                                        <li>.trim() → Removes spaces from both ends.
+                                        </li>
+                                        <li>.trimStart() → Removes spaces from the start.
+                                        </li>
+                                        <li>.trimEnd() → Removes spaces from the end.</li>
+                                        <h3>Syntax:</h3>
+                                        <pre>
+                                            let msg = "   Hello, World!   ";
+                                            console.log(msg.trim());       // "Hello, World!"
+                                            console.log(msg.trimStart());  // "Hello, World!   "
+                                            console.log(msg.trimEnd());    // "   Hello, World!"
+                                        </pre></li>
+                                    </ul>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li class="list"><h3>String Concatenation</h3>
+                <ul>
+                    <li style="list-style-type:disc;"><h3>You can combine strings using + or concat():</h3>
+                        
+                            <ul style="list-style: circle;">
+                                <li><h3>Syntax:</h3>
+                                <pre>
+                                    let firstName = "John";
+                                    let lastName = "Doe";
+                                    console.log(firstName + " " + lastName); // "John Doe"
+                                    console.log(firstName.concat(" ", lastName)); // "John Doe"
+                                </pre></li>
+                            </ul>
+
+                            <li style="list-style-type:disc;"><h3>Using Template Literals (``)</h3>
+
+                            <ul style="list-style: circle;">
+                                <li><h3>Syntax:</h3>
+                                <pre>
+                                    let name = "Alice";
+                                    let age = 25;
+                                    console.log(`My name is ${name} and I am ${age} years old.`);
+                                    // "My name is Alice and I am 25 years old."
+                                </pre></li>
+                            </ul>
+                    </li>
+                </ul>
+            </li>
+            
+
+            
+            <li class="list"><h3>Splitting a String</h3>
+                <ul>
+                    <li style="list-style-type:disc;"><h3>.split(separator, limit) converts a string into an array.</h3>
+                        
+                            <ul style="list-style: circle;">
+                                <li><h3>Syntax:</h3>
+                                <pre>
+                                    let sentence = "apple,banana,orange";
+                                    console.log(sentence.split(",")); // ["apple", "banana", "orange"]
+                                    console.log(sentence.split("", 5)); // ["a", "p", "p", "l", "e"]
+                                </pre></li>
+                            </ul>
+                    </li>
+                </ul>
+            </li>
+
+
+
+
+
+
+            <li class="list"><h3>String Iteration</h3>
+                <ul>
+                    <li style="list-style-type:disc;"><h3>Using for...of:</h3>
+                        
+                            <ul style="list-style: circle;">
+                                <li><h3>Syntax:</h3>
+                                <pre>
+                                    let text = "Hello";
+                                    for (let char of text) {
+                                   console.log(char);
+                                    }
+                                   // H
+                                   // e
+                                   // l
+                                  // l
+                                 // o
+                                </pre></li>
+                                
+                            </ul>
+                    </li>
+                    
+                </ul>
+            </li>
+
+
+            <li class="list"><h3>Escape Characters</h3>
+                <ul>
+                    <li style="list-style-type:disc;"><h3>Use \ to include special characters:</h3>
+                        
+                            <ul style="list-style: circle;">
+                                <li><h3>Syntax:</h3>
+                                <pre>
+                                    console.log("He said, \"Hello!\"");  // "He said, "Hello!""
+                                    console.log('It\'s a sunny day.');  // "It's a sunny day."
+                                    console.log("First Line\nSecond Line"); // New line
+                                    console.log("Tab\tSpace"); // Tab space
+                                </pre></li>
+                            </ul>
+                    </li>
+                </ul>
+            </li>
+
+
+
+            <li class="list"><h3>Checking if a String is Empty</h3>
+                <ul>
+                    <li style="list-style-type:disc;">
+                        
+                            <ul style="list-style: circle;">
+                                <li><h3>Syntax:</h3>
+                                <pre>
+                                    let str = "";
+                                    console.log(str.length === 0); // true
+                                    console.log(!str); // true (Falsy value)
+                                </pre></li>
+                            </ul>
+                    </li>
+                </ul>
+            </li>
+   
+        </ol>
+    </div>
+    <footer> <h4>© 2025 Blogs  || Designed by Rajesh Kumar</h4></footer>
+</body>
+</html>
